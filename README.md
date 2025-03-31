@@ -27,6 +27,37 @@ Before getting started, ensure that you have the following installed:
 ![image](https://github.com/user-attachments/assets/3b48e3bc-dcd8-4d86-a178-4e138c37096c)
 
 4. Select **.NET 8.0 (Long-term support)** and click **Create**.
+5. Configure your *Program.cs* file as below.
+
+   ```sh
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Hosting;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+var app = builder.Build();
+
+// Enable Swagger in all environments
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+    c.RoutePrefix = "swagger"; // Make Swagger UI available at "/"
+});
+
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+app.MapControllers();
+
+app.Run();
+   ```
 
 ![image](https://github.com/user-attachments/assets/fb624c02-ecc5-4b0e-8626-b4783eb3e644)
 

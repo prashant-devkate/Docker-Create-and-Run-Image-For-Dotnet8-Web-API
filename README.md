@@ -159,11 +159,7 @@ docker run -d -p 8080:8080 --name gcp-deployment-container gcpdeployment:latest
 
 6. Try accessing Swagger again:
 
-```sh
-http://localhost:8080/swagger
-or
-http://localhost:8080/WeatherForecast
-```
+`http://localhost:8080/swagger` or `http://localhost:8080/WeatherForecast`
 
 ## Conclusion
 I have successfully containerized a .NET 8 Web API application. Happy coding!

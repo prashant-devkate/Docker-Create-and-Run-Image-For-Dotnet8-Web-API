@@ -73,7 +73,7 @@ Before getting started, ensure that you have the following installed:
    
 3. Choose **Linux** as the target OS.
 
-![image](https://github.com/user-attachments/assets/ef11c84f-6481-4b77-b60d-10d95109ba49)
+![image](https://github.com/user-attachments/assets/3ef0517a-6b7a-424c-80d7-ceb9fdeadf0c)
 
 4. Visual Studio will generate a `Dockerfile` in the project.
 

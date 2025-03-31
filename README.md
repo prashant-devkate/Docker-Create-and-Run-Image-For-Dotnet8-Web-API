@@ -57,7 +57,7 @@ Before getting started, ensure that you have the following installed:
    app.UseAuthorization();
    app.MapControllers();
 
-app.Run();
+   app.Run();
 
 ```
 

@@ -44,6 +44,7 @@ Before getting started, ensure that you have the following installed:
 
    ![image](https://github.com/user-attachments/assets/91c33b34-6eac-418a-8c96-bf3b6a380013)
 
+This is the DockerFile source code.
 
 ```sh
 # See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.

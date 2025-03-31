@@ -122,7 +122,7 @@ ENTRYPOINT ["dotnet", "GcpDeployment.dll"]
    ```
 3. Run the container:
    ```sh
-   docker run -p 8080:80 gcp-deployment
+   docker run -p 8080:80 --name gcp-deployment-container gcp-deployment
    ```
 4. Open `http://localhost:8080/swagger` in a browser to test the API.
 

@@ -27,6 +27,9 @@ Before getting started, ensure that you have the following installed:
 ![image](https://github.com/user-attachments/assets/3b48e3bc-dcd8-4d86-a178-4e138c37096c)
 
 4. Select **.NET 8.0 (Long-term support)** and click **Create**.
+
+![image](https://github.com/user-attachments/assets/fb624c02-ecc5-4b0e-8626-b4783eb3e644)
+   
 5. Configure your Program.cs file as below.
 
    ```sh
@@ -61,7 +64,6 @@ Before getting started, ensure that you have the following installed:
 
    ```
 
-![image](https://github.com/user-attachments/assets/fb624c02-ecc5-4b0e-8626-b4783eb3e644)
 
 ## 2. Add Docker Support to the .NET 8 Web API Project
 1. Right-click on the project in **Solution Explorer**.

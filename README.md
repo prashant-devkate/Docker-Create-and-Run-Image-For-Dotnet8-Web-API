@@ -33,8 +33,17 @@ Before getting started, ensure that you have the following installed:
 ## 2. Add Docker Support to the .NET 8 Web API Project
 1. Right-click on the project in **Solution Explorer**.
 2. Select **Add > Docker Support**.
+
+![image](https://github.com/user-attachments/assets/91da0486-2e04-4b90-9582-680168456bff)
+   
 3. Choose **Linux** as the target OS.
+
+![image](https://github.com/user-attachments/assets/9c3a4fbc-8506-4cbf-b896-69af0e440a81)
+
 4. Visual Studio will generate a `Dockerfile` in the project.
+
+   ![image](https://github.com/user-attachments/assets/91c33b34-6eac-418a-8c96-bf3b6a380013)
+
 
 ## 3. Build and Run the Docker Container Locally
 1. Open a terminal or command prompt and navigate to the project directory.

@@ -11,13 +11,15 @@ Before getting started, ensure that you have the following installed:
 
 ![image](https://github.com/user-attachments/assets/e335b5ff-05c4-4fcc-b91b-ec2049146c2a)
 
-Run Visual Studio 2022 Community Edition and create a new project
+1. Open **Visual Studio 2022** and select **Create a new project**.
 
 ![image](https://github.com/user-attachments/assets/1f8b45fc-c682-4984-aeca-5ce99d6ed07b)
 
-
-1. Open **Visual Studio 2022** and select **Create a new project**.
 2. Choose **ASP.NET Core Web API** and click **Next**.
+
+
+
+
 3. Configure your project:
    - Name: `DotNet8WebAPI`
    - Location: Choose your desired folder

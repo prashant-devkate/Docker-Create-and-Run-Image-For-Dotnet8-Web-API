@@ -30,6 +30,7 @@ Before getting started, ensure that you have the following installed:
 5. Configure your *Program.cs* file as below.
 
    ```sh
+   
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Hosting;
 
@@ -57,6 +58,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
    ```
 
 ![image](https://github.com/user-attachments/assets/fb624c02-ecc5-4b0e-8626-b4783eb3e644)

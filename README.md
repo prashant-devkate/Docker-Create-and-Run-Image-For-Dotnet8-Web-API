@@ -139,6 +139,8 @@ docker run -d -p 8080:8080 --name gcp-deployment-container gcpdeployment:latest
 
 ```sh
 http://localhost:8080/swagger
+or
+http://localhost:8080/WeatherForecast
 ```
 
 ## 4. Push the Docker Image to Docker Hub

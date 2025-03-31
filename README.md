@@ -143,38 +143,6 @@ or
 http://localhost:8080/WeatherForecast
 ```
 
-## 4. Push the Docker Image to Docker Hub
-1. Log in to Docker Hub:
-   ```sh
-   docker login
-   ```
-2. Tag the image with your Docker Hub username:
-   ```sh
-   docker tag my-dotnet8-api <your-docker-hub-username>/my-dotnet8-api
-   ```
-3. Push the image to Docker Hub:
-   ```sh
-   docker push <your-docker-hub-username>/my-dotnet8-api
-   ```
-
-## 5. Pull and Run the Image from Docker Hub
-1. Pull the image:
-   ```sh
-   docker pull <your-docker-hub-username>/my-dotnet8-api
-   ```
-2. Run the container:
-   ```sh
-   docker run -p 8080:80 <your-docker-hub-username>/my-dotnet8-api
-   ```
-3. Verify the API by opening `http://localhost:8080/swagger` in a browser.
-
-## 6. Cleanup (Optional)
-To remove the container and image:
-```sh
-docker rm -f $(docker ps -aq)
-docker rmi $(docker images -q)
-```
-
 ## Conclusion
-You have successfully containerized a .NET 8 Web API application, uploaded it to Docker Hub, and pulled it back for deployment. Happy coding!
+I have successfully containerized a .NET 8 Web API application. Happy coding!
 

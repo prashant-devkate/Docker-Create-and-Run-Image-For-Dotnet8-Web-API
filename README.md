@@ -45,6 +45,39 @@ Before getting started, ensure that you have the following installed:
    ![image](https://github.com/user-attachments/assets/91c33b34-6eac-418a-8c96-bf3b6a380013)
 
 
+```sh
+# See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+# This stage is used when running from VS in fast mode (Default for Debug configuration)
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+USER $APP_UID
+WORKDIR /app
+EXPOSE 8080
+EXPOSE 8081
+
+
+# This stage is used to build the service project
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
+COPY ["GcpDeployment.csproj", "."]
+RUN dotnet restore "./././GcpDeployment.csproj"
+COPY . .
+WORKDIR "/src/."
+RUN dotnet build "./GcpDeployment.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
+# This stage is used to publish the service project to be copied to the final stage
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./GcpDeployment.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+# This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "GcpDeployment.dll"]
+```
+
 ## 3. Build and Run the Docker Container Locally
 1. Open a terminal or command prompt and navigate to the project directory.
 2. Build the Docker image:

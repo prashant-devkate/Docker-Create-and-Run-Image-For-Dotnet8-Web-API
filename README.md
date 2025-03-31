@@ -9,6 +9,9 @@ Before getting started, ensure that you have the following installed:
 ## 1. Create a .NET 8 Web API in Visual Studio 2022 Community
 **Important:** Install and run Docker Desktop before creating the application in Visual Studio 2022.
 
+![image](https://github.com/user-attachments/assets/e335b5ff-05c4-4fcc-b91b-ec2049146c2a)
+
+
 1. Open **Visual Studio 2022** and select **Create a new project**.
 2. Choose **ASP.NET Core Web API** and click **Next**.
 3. Configure your project:

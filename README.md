@@ -126,6 +126,15 @@ ENTRYPOINT ["dotnet", "GcpDeployment.dll"]
    ```
 4. Open `http://localhost:8080/swagger` in a browser to test the API.
 
+5. Rebuild & Restart Docker Container (If not working)
+
+```sh
+docker build --no-cache -t gcp-deployment:latest .
+docker stop gcp-deployment-container
+docker rm gcp-deployment-container
+docker run -d -p 8080:8080 --name gcp-deployment-container gcpdeployment:latest
+```
+
 ## 4. Push the Docker Image to Docker Hub
 1. Log in to Docker Hub:
    ```sh

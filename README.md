@@ -13,18 +13,22 @@ Before getting started, ensure that you have the following installed:
 
 1. Open **Visual Studio 2022** and select **Create a new project**.
 
-![image](https://github.com/user-attachments/assets/1f8b45fc-c682-4984-aeca-5ce99d6ed07b)
+![image](https://github.com/user-attachments/assets/6e0cdd02-92a4-4355-b3f2-3603ba07dfb4)
 
 2. Choose **ASP.NET Core Web API** and click **Next**.
 
-
-
+![image](https://github.com/user-attachments/assets/110d6241-b30b-4d1a-871c-0af4ee1a5275)
 
 3. Configure your project:
-   - Name: `DotNet8WebAPI`
+   - Name: `GcpDeployment`
    - Location: Choose your desired folder
    - Click **Next**
+
+![image](https://github.com/user-attachments/assets/3b48e3bc-dcd8-4d86-a178-4e138c37096c)
+
 4. Select **.NET 8.0 (Long-term support)** and click **Create**.
+
+![image](https://github.com/user-attachments/assets/fb624c02-ecc5-4b0e-8626-b4783eb3e644)
 
 ## 2. Add Docker Support to the .NET 8 Web API Project
 1. Right-click on the project in **Solution Explorer**.

@@ -77,7 +77,7 @@ Before getting started, ensure that you have the following installed:
 
 4. Visual Studio will generate a `Dockerfile` in the project.
 
-![image](https://github.com/user-attachments/assets/2b55f852-31b1-4dff-8270-5c32edfb6187)
+![image](https://github.com/user-attachments/assets/d230e998-e961-4d5b-b70c-b159ca580cd2)
 
 This is the DockerFile source code.
 

@@ -161,6 +161,8 @@ docker run -d -p 8080:8080 --name gcp-deployment-container gcp-deployment:latest
 
 `http://localhost:8080/swagger` or `http://localhost:8080/WeatherForecast`
 
+![image](https://github.com/user-attachments/assets/b8d039ed-8501-41ad-b6e8-0e00a41e2b93)
+
 ## Conclusion
 I have successfully containerized a .NET 8 Web API application. Happy coding!
 

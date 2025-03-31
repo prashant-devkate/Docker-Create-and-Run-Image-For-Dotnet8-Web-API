@@ -118,11 +118,11 @@ ENTRYPOINT ["dotnet", "GcpDeployment.dll"]
 1. Open a terminal or command prompt and navigate to the project directory.
 2. Build the Docker image:
    ```sh
-   docker build -t my-dotnet8-api .
+   docker build -t gcp-deployment .
    ```
 3. Run the container:
    ```sh
-   docker run -p 8080:80 my-dotnet8-api
+   docker run -p 8080:80 gcp-deployment
    ```
 4. Open `http://localhost:8080/swagger` in a browser to test the API.
 

@@ -146,7 +146,7 @@ docker rm gcp-deployment-container
 🔹 Container Name: gcp-deployment-container
 
 ```sh
-docker run -d -p 8080:8080 --name gcp-deployment-container gcpdeployment:latest
+docker run -d -p 8080:8080 --name gcp-deployment-container gcp-deployment:latest
 ```
 
 🔹 docker run: Starts a new container.

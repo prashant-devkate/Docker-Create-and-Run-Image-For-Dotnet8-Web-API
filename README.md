@@ -130,10 +130,32 @@ ENTRYPOINT ["dotnet", "GcpDeployment.dll"]
 
 ```sh
 docker build --no-cache -t gcp-deployment:latest .
+```
+
+🔹 docker build: Builds a new Docker image.
+🔹 Image Name: gcp-deployment:latest
+🔹 .: Current directory, where the Dockerfile is located.
+
+```sh
 docker stop gcp-deployment-container
 docker rm gcp-deployment-container
+```
+
+🔹 docker stop gcp-deployment-container: Stops the running container named gcp-deployment-container.
+🔹 docker rm gcp-deployment-container: Removes (deletes) the stopped container.
+🔹 Container Name: gcp-deployment-container
+
+```sh
 docker run -d -p 8080:8080 --name gcp-deployment-container gcpdeployment:latest
 ```
+
+🔹 docker run: Starts a new container.
+🔹 -d: Runs the container in detached mode (in the background).
+🔹 -p 8080:8080: Maps port 8080 on the host machine to port 8080 inside the container.
+🔹 --name gcp-deployment-container: Assigns the name gcp-deployment-container to the running container.
+🔹 gcpdeployment:latest: Specifies the image to use.
+
+
 
 6. Try accessing Swagger again:
 

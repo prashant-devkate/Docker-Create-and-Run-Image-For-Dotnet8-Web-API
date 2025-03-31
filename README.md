@@ -1,9 +1,8 @@
-# Containerize a .NET 8 Web API Application with Docker and Upload/Download the Image to/from Docker Hub
+# Containerize a .NET 8 Web API Application with Docker
 
 ## 0. Prerequisites
 Before getting started, ensure that you have the following installed:
 - **Docker Desktop**: Install it from [Docker's official site](https://www.docker.com/products/docker-desktop/)
-- **Docker Hub Account**: Create an account at [Docker Hub](https://hub.docker.com/)
 - **Visual Studio 2022 Community Edition**: Download it from [Microsoft's official site](https://visualstudio.microsoft.com/)
 
 ## 1. Create a .NET 8 Web API in Visual Studio 2022 Community

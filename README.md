@@ -69,7 +69,7 @@ Before getting started, ensure that you have the following installed:
 1. Right-click on the project in **Solution Explorer**.
 2. Select **Add > Docker Support**.
 
-![image](https://github.com/user-attachments/assets/eb40424b-065f-4302-bd6f-84965c5eb476)
+![image](https://github.com/user-attachments/assets/4b33af54-e8be-4f9d-ace6-5057413e3416)
    
 3. Choose **Linux** as the target OS.
 

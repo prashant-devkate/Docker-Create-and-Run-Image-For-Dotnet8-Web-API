@@ -135,6 +135,12 @@ docker rm gcp-deployment-container
 docker run -d -p 8080:8080 --name gcp-deployment-container gcpdeployment:latest
 ```
 
+6. Try accessing Swagger again:
+
+```sh
+http://localhost:8080/swagger
+```
+
 ## 4. Push the Docker Image to Docker Hub
 1. Log in to Docker Hub:
    ```sh

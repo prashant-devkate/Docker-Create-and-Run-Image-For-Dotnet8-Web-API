@@ -34,15 +34,15 @@ Before getting started, ensure that you have the following installed:
 1. Right-click on the project in **Solution Explorer**.
 2. Select **Add > Docker Support**.
 
-![image](https://github.com/user-attachments/assets/91da0486-2e04-4b90-9582-680168456bff)
+![image](https://github.com/user-attachments/assets/eb40424b-065f-4302-bd6f-84965c5eb476)
    
 3. Choose **Linux** as the target OS.
 
-![image](https://github.com/user-attachments/assets/9c3a4fbc-8506-4cbf-b896-69af0e440a81)
+![image](https://github.com/user-attachments/assets/ef11c84f-6481-4b77-b60d-10d95109ba49)
 
 4. Visual Studio will generate a `Dockerfile` in the project.
 
-   ![image](https://github.com/user-attachments/assets/91c33b34-6eac-418a-8c96-bf3b6a380013)
+![image](https://github.com/user-attachments/assets/2b55f852-31b1-4dff-8270-5c32edfb6187)
 
 This is the DockerFile source code.
 
